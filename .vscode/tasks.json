@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build alle C-Dateien automatisch",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "if (!(Test-Path build)) { mkdir build }; gcc -I includes src/*.c -o build/HelloWorld.exe",
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "detail": "Kompiliert automatisch alle .c-Dateien im src/-Ordner"
+    }
+  ]
+}
