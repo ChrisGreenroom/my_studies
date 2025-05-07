@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build & Run all C files",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-I",
+                "includes",
+                "src/*.c",
+                "-o",
+                "sayHelloWorld",
+                "&&",
+                "sayHelloWorld"
+            ],
+            "options": {
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": [
+                        "/c"
+                    ]
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
