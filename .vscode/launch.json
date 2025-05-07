@@ -2,13 +2,14 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Starte Programm",
+      "name": "Build und starte HelloWorld.exe",
       "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/build/HelloWorld.exe",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Build alle C-Dateien automatisch",
       "environment": [],
       "externalConsole": true,
       "MIMode": "gdb",

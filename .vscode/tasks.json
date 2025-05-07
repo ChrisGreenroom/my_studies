@@ -4,13 +4,10 @@
     {
       "label": "Build alle C-Dateien automatisch",
       "type": "shell",
-      "command": "gcc",
+      "command": "powershell",
       "args": [
-        "-I",
-        "includes",
-        "${workspaceFolder}/src/*.c",
-        "-o",
-        "${workspaceFolder}/build/HelloWorld.exe"
+        "-Command",
+        "if (!(Test-Path build)) { mkdir build }; gcc -I includes src/*.c -o build/HelloWorld.exe",
       ],
       "options": {
         "cwd": "${workspaceFolder}"
