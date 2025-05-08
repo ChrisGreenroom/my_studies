@@ -3,8 +3,8 @@
  * "worksheet_01_myData.pdf" in docs folder.
  */
 
-#ifndef TASK_01_H
-#define TASK_01_H
+#ifndef TASK_01_myData_H
+#define TASK_01_myData_H
 
 void print_personal_data(void);
 
