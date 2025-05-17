@@ -13,6 +13,9 @@ void find_maximum_of_two_numbers(void)
     // turn off buffer
     setvbuf(stdout, NULL, _IONBF, 0);
 
+    // task-announcement
+    printf("Task_03: \n");
+
     // read in data
     printf("Please enter your first number: \n");
     scanf("%f", &number_1);
@@ -23,7 +26,7 @@ void find_maximum_of_two_numbers(void)
     // number comparision
     if (number_1 > number_2)
     {
-        printf("%f", number_1, number_2);
+        printf("%f", number_1);
     }
     else
     {
